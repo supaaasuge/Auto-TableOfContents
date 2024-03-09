@@ -1,6 +1,14 @@
 # Auto-TableOfContents
 Python script to read a markdown file/directory of markdown files and automatically create a working Table of Contents of all headers.
-
+`python3 createToC.py --file <file_path.md>`
+- Process a single markdown file.
+`python3 createToC.py --dir </path/to/mdNotes/dir>`
+- Process a directory + all sub directories of markdown files
+`python3 createToC.py --file <file_path.md> --git`
+- Process file using Github compatible format (`-` instead of `\` for spaces)
+  - If you want Obsidian compatible anchor links leave it as is.
+`python3 createToC.py --dir </path/to/mdNotes/dir> --git`
+- Process a directory + all sub-directories using Github compatible format. 
 
 Examples:
 
